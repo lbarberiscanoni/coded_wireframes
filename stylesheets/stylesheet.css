@@ -49,9 +49,12 @@ table {
   width: 90%;
   margin: 0 auto; }
 
+nav {
+  position: fixed;
+  width: 100%; }
+
 li {
   float: left;
-  position: fixed;
   width: 30%;
   border: 1px solid black;
   border-radius: 10px;
