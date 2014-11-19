@@ -1,0 +1,213 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*Ignore the gross stuff above */
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+li {
+  float: left;
+  position: fixed;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px;
+  text-decoration: none; }
+
+.logo {
+  clear: both;
+  margin: 20px auto;
+  background: grey;
+  border-radius: 300px;
+  max-width: 300px;
+  min-height: 300px; }
+
+h1 {
+  font-size: 3.8em;
+  line-height: 1.35em;
+  text-align: center; }
+
+h2 {
+  clear: both;
+  font-size: 3em;
+  line-height: 1.35em;
+  text-align: center; }
+
+h3 {
+  text-align: center;
+  font-size: 2.2em;
+  -moz-box-sizing: border-box;
+  /* Firefox 1, probably can drop this */
+  -webkit-box-sizing: border-box;
+  /* Safari 3-4, also probably droppable */
+  box-sizing: border-box;
+  /* Everything else */
+  padding: 3px; }
+
+.aboutme p {
+  max-width: 80%;
+  margin: 10px auto;
+  font-size: 1.25em;
+  line-height: 1.35em; }
+
+.project_card {
+  margin: 40px auto;
+  -moz-box-sizing: border-box;
+  /* Firefox 1, probably can drop this */
+  -webkit-box-sizing: border-box;
+  /* Safari 3-4, also probably droppable */
+  box-sizing: border-box;
+  /* Everything else */
+  padding: 20px 0;
+  background: blue;
+  max-width: 300px; }
+  .project_card .project_name {
+    background: grey;
+    max-width: 80%;
+    margin: 0 auto; }
+  .project_card .project_description {
+    background: grey;
+    width: 80%;
+    margin: 0 auto; }
+    .project_card .project_description p {
+      width: 80%;
+      font-size: 1.1em;
+      line-height: 1.4em;
+      margin: 20px;
+      -moz-box-sizing: border-box;
+      /* Firefox 1, probably can drop this */
+      -webkit-box-sizing: border-box;
+      /* Safari 3-4, also probably droppable */
+      box-sizing: border-box;
+      /* Everything else */
+      padding: 5px; }
+  .project_card .project_pic {
+    width: 15em;
+    min-height: 15em;
+    margin: 0 auto;
+    background: grey; }
+  .project_card .buttons {
+    margin-left: 10px; }
+    .project_card .buttons button {
+      width: 35%;
+      min-height: 40px;
+      border-radius: 10px;
+      margin: 20px 20px 0 20px;
+      font-size: 1.25em; }
+
+.tumblr {
+  max-width: 300px;
+  margin: 20px auto;
+  background: blue;
+  -moz-box-sizing: border-box;
+  /* Firefox 1, probably can drop this */
+  -webkit-box-sizing: border-box;
+  /* Safari 3-4, also probably droppable */
+  box-sizing: border-box;
+  /* Everything else */
+  padding: 10px; }
+  .tumblr .post_name {
+    width: 90%;
+    margin: 0 auto;
+    background: grey; }
+  .tumblr p {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    background: grey;
+    -moz-box-sizing: border-box;
+    /* Firefox 1, probably can drop this */
+    -webkit-box-sizing: border-box;
+    /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;
+    /* Everything else */
+    padding: 10px; }
+  .tumblr button {
+    width: 80%;
+    min-height: 40px;
+    margin-left: 30px;
+    border-radius: 8px; }
+
+.twitter {
+  margin: 20px auto;
+  width: 80%; }
+  .twitter #twitter-widget-0 {
+    width: 100% !important; }
+
+@media screen and (min-width: 680px) {
+  nav {
+    display: none;
+    display: hidden; }
+
+  .logo {
+    clear: both;
+    margin: 20px 0;
+    float: left; }
+
+  h1 {
+    font-size: 3.2em; }
+
+  .aboutme p {
+    line-height: 1.8em; }
+
+  .project_card, .tumblr {
+    float: left;
+    margin: 40px 4px; }
+
+  .project_card:nth-of-type(2n), .tumblr:nth-of-type(2n) {
+    float: right; } }
+@media screen and (min-width: 868px) {
+  .project_card, .tumblr {
+    float: left;
+    margin: 40px 3%; }
+
+  .project_card:nth-of-type(2n), .tumblr:nth-of-type(2n) {
+    float: left; } }
+
+/*# sourceMappingURL=stylesheet.css.map */

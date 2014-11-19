@@ -1,0 +1,204 @@
+@import "reset";
+
+@mixin picture {
+	width: 15em;
+	min-height: 15em;
+	margin: 0 auto;
+	background: grey;
+}
+
+@mixin border-box {
+   -moz-box-sizing: border-box;   /* Firefox 1, probably can drop this */
+   -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing: border-box;   /* Everything else */
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+li {
+	float: left;
+	position: fixed;
+	width: 30%;
+	border: 1px solid black;
+	border-radius: 10px;
+	text-align: center;
+	margin: 5px;
+	text-decoration: none;
+}
+
+.logo {
+	clear: both;
+	margin: 20px auto;
+	background: grey;
+	border-radius: 300px;
+	max-width: 300px;
+	min-height: 300px;
+}
+
+h1 {
+	font-size: 3.8em;
+	line-height: 1.35em;
+	text-align: center;
+}
+h2 {
+	clear: both;
+	font-size: 3em;
+	line-height: 1.35em;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	font-size: 2.2em;
+	@include border-box;
+	padding: 3px;
+}
+
+.aboutme {
+
+	p {
+		max-width: 80%;
+		margin: 10px auto;
+		font-size: 1.25em;
+		line-height: 1.35em;
+	}
+}
+
+.project_card {
+	margin: 40px auto;
+	@include border-box;
+	padding: 20px 0;
+	background: blue;
+	max-width: 300px;
+
+	.project_name {
+	background: grey;
+	max-width: 80%;
+	margin: 0 auto;
+	}
+	
+	.project_description {
+		background: grey;
+		width: 80%;
+		margin: 0 auto;
+
+		 p {
+		 	width: 80%;
+			font-size: 1.1em;
+			line-height: 1.4em;
+			margin: 20px;
+			@include border-box;
+			padding: 5px;
+		}
+	}
+
+	.project_pic {
+		@include picture;
+	}
+	
+	.buttons {
+		margin-left: 10px;
+
+		button {
+			width: 35%;
+			min-height: 40px;
+			border-radius: 10px;
+			margin: 20px 20px 0 20px;
+			font-size: 1.25em;
+		}
+	}
+}
+
+.tumblr {
+	max-width: 300px;
+	margin: 20px auto;
+	background: blue;
+	@include border-box;
+	padding: 10px;
+
+	.post_name {
+		width: 90%;
+		margin: 0 auto;
+		background: grey;
+	}
+	
+	p {
+		width: 90%;
+		margin: 10px auto;
+		font-size: 1.1em;
+		line-height: 1.5em;
+		background: grey;
+		@include border-box;
+		padding: 10px;
+	}
+
+	button {
+		width: 80%;
+		min-height: 40px;
+		margin-left: 30px;
+		border-radius: 8px;
+	}
+}
+
+.twitter {
+	margin: 20px auto;
+	width: 80%;
+
+	#twitter-widget-0 { 
+	      width: 100% !important; 
+	    }
+}
+
+@media screen and (min-width: 680px) {
+
+	nav {
+		display: none;
+		display: hidden;
+	}
+
+	.logo {
+		clear: both;
+		margin: 20px 0;
+		float: left;
+	}
+
+	h1 {
+		font-size: 3.2em;
+	}
+
+	.aboutme p {
+		line-height: 1.8em;
+	}
+
+	.project_card, .tumblr {
+		float: left;
+		margin: 40px 4px;
+	}
+
+	.project_card:nth-of-type(2n), .tumblr:nth-of-type(2n) {
+		float: right;
+	}
+
+}
+
+@media screen and (min-width: 868px) {
+
+	.project_card, .tumblr {
+		float: left;
+		margin: 40px 3%;
+	}
+
+	.project_card:nth-of-type(2n), .tumblr:nth-of-type(2n) {
+		float: left;
+	}
+
+}
+
+
+
+
+
+
