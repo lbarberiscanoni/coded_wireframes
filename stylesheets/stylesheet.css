@@ -47,17 +47,20 @@ table {
 /*Ignore the gross stuff above */
 .container {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
-li {
-  float: left;
+nav {
   position: fixed;
-  width: 30%;
-  border: 1px solid black;
-  border-radius: 10px;
-  text-align: center;
-  margin: 5px;
-  text-decoration: none; }
+  width: 100%; }
+  nav li {
+    float: left;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none; }
 
 .logo {
   clear: both;
